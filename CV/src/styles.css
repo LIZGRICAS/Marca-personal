@@ -105,6 +105,16 @@ img {
     perspective: 379.546px;
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
     }
+    
+#logo {     
+    margin:0;
+    width: 200px; 
+    height: 150px;
+    z-index: 10;
+    border: white;
+    border-radius: 20px;
+    position: fixed;
+}
 
 #gif {
     width: 632px; 
@@ -437,7 +447,6 @@ img {
     width: 350px;
     height: 100%;
     text-align: center;
-    text-: 1px;
 }
 
 #web {
@@ -483,21 +492,6 @@ img {
 
 /* Start Line */
 
-@media.et_pb_row {
-    max-width: 1080px;
-    padding: 30px 0;
-}
-
-.et_pb_row {    
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    width: 80%;
-    max-width: 1080px;
-    margin: auto;
-    position: relative;
-}
-}
 
 /* Finish Line */
 
