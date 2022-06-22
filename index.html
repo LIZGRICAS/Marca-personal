@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <title>CV</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>L!zGC</title>
+    <link rel="shortcut icon" href="./src/img/Imagen5.png">
 </head>
 <body>
  <!--Start Navbar-->
  <div class="contenedor">
     <div class="navar">
-        <a href="" target="_blank"><img src=src\img\github_preview_rev_1.png alt="base" id="github"></a>
+        <a href="https://github.com/LIZGRICAS" target="_blank"><img src=src\img\github_preview_rev_1.png alt="base" id="github"></a>
         <a href="https://api.whatsapp.com/send?phone=573008333775" target="_blank"><img src=src\img\Whatsapp_preview_rev_1_preview_rev_1.png alt="base" id="whatsapp"></a>
         <a href="https://www.linkedin.com/in/lizbeth-grisales-castro" target="_blank"><img src=src\img\linkedin1.jpg alt="base" id="linkedin"></a>
         <a href="" target="_blank"><img src=src\img\Telegram_preview_rev_2.png alt="base" id="telegram"></a>
@@ -96,45 +98,84 @@
             </div>
         </div>
     </div>
+    <br>    
 <!--Finish servicies-->
-<!-- Start line-->
-<div class="et_pb_row">
-    <div class="et_pb_column">
-        <div class="et_pb_module">
+<hr width="50%"/>
+<!-- Start projects-->
+<div class="proyectos">
+    <h1>Proyectos recientes</h1>
+    <div class="bohemia">
+        <div class="text_boh">
+            <h4>diseño de sitios web y marca</h4>
+            <h3>Bohemia Design.co</h3>
+            <p><span>Bohemia Design.co es una marca de ropa que personaliza tus prendas a la medida, a la vanguardia de la moda y desde un sentido medio ambiental.</span></p>
+            <br>
+            <img src="./src/img/icons8-información-del-sistema-64.png" alt="monitor" id="monitor"> 
+            <p class="sitio">VER SITIO WEB</p>
+        </div>
+        <div class="web_boh">
+            <img src="./src/img/BOHEMIA DESIGN.gif" alt="video_bohemia" id="video_bohemia">
+            <img src="./src/img/pc_1-removebg-preview (1).png" alt="pc_bohemia" id="pc_bohemia">
+        </div>
+        <br>
+    </div>
+    <div class="kuthzen">
+        <div class="text_kuth">
+            <h4>diseño de sitios web y marca</h4>
+            <h3>Kuthzen</h3>
+            <p><span>Kuthzen es una Startup de consultoría estratégica para la transformación digital de modelos de negocios con diseños creativos, tecnológicos y sostenibles.</span></p>
+            <br>
+            <img src="./src/img/icons8-información-del-sistema-64.png" alt="monitor" id="monitor"> 
+            <p class="sitio">SITIO WEB PRÓXIMAMENTE...</p>
+        </div>
+        <div class="web_kuth">
+            <img src="./src/img/kuthzen.gif" alt="video_kuth" id="video_kuth">
+            <img src="./src/img/monitor-removebg-preview.png" alt="pc_kuth" id="pc_kuth">
         </div>
     </div>
 </div>
-<!-- Finish line -->
-<!--Finish Perfil-->
-<!--S inicia Educación-->
-<!-- <div class="container">
-    <div class="carousel-formación">
-        <img src="src\img\Formación\En curso.gif" alt="en-curso">
-        <img src="src\img\Formación\Platzi.gif" alt="Platzi">
-        <img src="src\img\Formación\4RI.gif" alt="4RI">
-        <img src="src\img\Formación\Diplomados.gif" alt="Diplomados">
-        <img src="src\img\Formación\Educación Superior.gif" alt="Educación Superior">
-        <button class="carousel-control-prev" type="button" data-bs-target=""></button>
-    </div> -->
-
-<!--S termina Educación-->
-
+<br>
+<!-- Finish projects -->
+<hr width="50%"/>
+<!--Start Educación-->
+<h1 class="Estudios">Formación</h1>
+    <br>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./src/img/Formación/En curso.gif" alt=""></div>
+        <div class="swiper-slide"><img src="./src/img/Formación/Platzi.gif" alt=""></div>
+        <div class="swiper-slide"><img src="./src/img/Formación/Educación Superior.gif" alt=""></div>
+        <div class="swiper-slide"><img src="./src/img/Formación/4RI.gif" alt=""></div>
+        <div class="swiper-slide"><img src="./src/img/Formación/Diplomados.gif" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>   
+<!--Finish Educación-->
         <footer><p><b>Teléfono 333 08 02 – +57 3008333775
             E-mail: lizbethgrisalescastro@gmail.com
             Medellín, Colombia</b></p>
        <b>Contacto:</b> +57 3008333775 
        <a href="https://api.whatsapp.com/send?phone=573008333775"target="_blank">Whatsapp
        </a>
-        </footer> -->
-    <!-- Loading and initialize the Carousel lib -->
-<script src="src\js\carousel.js"></script>
-<script>
-    Carousel.init({
-        target: $('.carousel')
-    });
-</script>
-    </body>
+        </footer>  
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+</body>
 </html>
-
-
-
