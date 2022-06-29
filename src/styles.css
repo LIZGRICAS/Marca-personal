@@ -29,7 +29,10 @@ body {
     align-items:flex-start;
     position: fixed;
     left: 90%;
-    padding-right: 62.5%;
+    margin-right: 62.5%;
+    transform: rotateY(0deg) rotateX(0deg) scale(1);
+    perspective: 379.546px;
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
 #github:hover, #whatsapp:hover, #linkedin:hover, #telegram:hover {
@@ -81,6 +84,9 @@ header.contenedor {
     border-radius: 20px;
     position: fixed;
     z-index: 3;
+    transform: rotateY(0deg) rotateX(0deg) scale(1);
+    perspective: 379.546px;
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
 .img_header {
@@ -157,7 +163,7 @@ h1 {
     transform: rotateY(0deg) rotateX(0deg) scale(1);
     perspective: 379.78px;
     filter: drop-shadow(rgba(230, 75, 117, 0.37) 0px 10px 15px);
-    margin-left: 35%;
+    margin-left: 25%;
 }
 
 .btn:hover {
@@ -287,7 +293,7 @@ h1 {
     background-image: url('./img/pink-star-psd-429863.png');
     background-size: cover;
     background-position: center;
-    left: -7%;
+    left: -9%;
     top: 20%;
     transform: translateY(-50%);
 }
@@ -297,30 +303,27 @@ h1 {
 .wave_div {
     width: 100%;
     min-width: 300px;
-    height: 220px;
-    margin-bottom: 100px;
+    height: 320px;
     margin-top: 100px;
     background:
-    linear-gradient( to top, #32ded4ff, #9900efff, transparent 200px);
+    linear-gradient( to top, #32ded4ff, #9900efff, transparent 300px);
     opacity: 1.4;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,50%);
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
 #text_cot h1 {
-    flex: 1;
     font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
     text-align: center;
     word-wrap: break-word;
-    padding-top: 50px;
+    padding-top: 100px;
     margin-right: 50px;
     position: relative;
 }
 
 .btn2 {
-    flex: 2;
     align-self: center;
     cursor: pointer;
     font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
@@ -347,7 +350,8 @@ h1 {
     animation-duration: .2s;
     z-index: 3;
     object-fit: cover;
-    margin-top: 50px;
+    margin-top: 140px;
+    margin-left: 20%;
 }
 
 .btn2:hover {
@@ -359,12 +363,13 @@ h1 {
 
 /* Star Services */
 .servicios {
-    margin: 50px 0px;
+    margin: 100px 0px;
 }
 
 .contenedor_serv {
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-columns: repeat(3,33.3%);
     width: 90%;
     min-width: 300px;
     margin: 20px;
@@ -401,18 +406,14 @@ h1 {
 }
 
 .bohemia, .kuthzen {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,50%);
     width: 100%;
-    height: 100%;
-    direction: ltr;
-    vertical-align: inherit;
     margin-top: 80px;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
 }
 
 .text_boh, .text_kuth {
-    flex: 1;
     padding-top: 40px;
     padding-bottom: 40px;
     margin-right: 5.5%;
@@ -451,6 +452,9 @@ h1 {
     width: 40px;
     height: 40px;
     position: absolute;
+    transform: rotateY(0deg) rotateX(0deg) scale(1);
+    perspective: 379.546px;
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
 .sitio {
@@ -465,15 +469,15 @@ h1 {
 }
 
 .web_boh {
-    flex:2;
-    max-width: 50%;
+    max-width: 80%;
+    min-height: 292px;
     background-image: url(./img/monitor_bohemia.gif);
     background-size: 100% 100%;
 }
 
 .web_kuth {
-    flex:2;
-    max-width: 50%;
+    max-width: 80%;
+    min-height: 292px;
     background-image: url(./img/monitor_kuthzen.gif);
     background-size: 100% 100%;
 }
@@ -555,7 +559,7 @@ h1 {
     }
 
     .wave_div {
-        margin-bottom: 150px;
+        margin-bottom: 150px!important;
     }
 
  	.proyectos, .text_boh, .text_kuth {
@@ -567,12 +571,6 @@ h1 {
         margin-top: 80px;
         }
 
-	.web_boh, .web_kuth {
-        width:100%;
-		background-size: 80% 80%;
-        background-repeat: no-repeat; 
-	    }
-
     .sitio {
         margin-left: 25%;
         font-size: 78%!important;
@@ -583,13 +581,34 @@ h1 {
         margin: 0px;
         padding: 0;
     }
+
+    .bt {
+        margin-left: 15%!important;
+    }
+
+    .wave_div {
+        grid-template-columns: repeat(1,100%);
+    }
 }
 
-@media (max-width:622px){
+@media (min-width:800px){
 
-.web_boh, .web_kuth {
-    max-width: auto;
+.header_text a {
+    margin-left: 5%;
 }
+
+}
+
+@media (max-width:490px){
+
+.contenedor_serv, .bohemia, .kuthzen, .wave_div {
+    grid-template-columns: repeat(1,100%);
+}
+
+.servicios h1 {
+    padding-top: 150px;
+}
+
 }
 
 /* Star footer */
@@ -601,17 +620,27 @@ h1 {
     background:
     linear-gradient( to top, #32ded4ff, #9900efff, transparent 300px);
     opacity: 1.4;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,50%);
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
+#blog {
+    width: 100px;
+    height: 90px;
+    transform: rotateY(0deg) rotateX(0deg) scale(1);
+    perspective: 379.546px;
+    filter: drop-shadow(rgba(22, 34, 201, 0.952) 0px 10px 15px);
+}
+
+#visit { 
+    font-size: 200%!important;
+}
+
 #copy {
-    flex: 1;
     text-align: center;
     word-wrap: break-word;
-    padding-top: 50px;
     margin-right: 50px;
     position: relative;
     z-index: 6;
@@ -625,7 +654,6 @@ h1 {
 }
 
 #datos {
-    flex: 1;
     text-align: center;
     word-wrap: break-word;
     padding-top: 20px;

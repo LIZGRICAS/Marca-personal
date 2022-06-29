@@ -1,0 +1,53 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+    color: black;
+    letter-spacing: .025em;
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "navbar" "navbar" "navbar" "navbar"
+    "header"
+    "main" "main" "main" "main"
+    "section1" "section1"
+    "section2" "section2" "section2" "section2" "section2"
+    "footer" "footer" "footer" "footer";
+}
+
+.nav {
+    grid-area: navbar;
+    background-color: yellowgreen;
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.main {
+    background-color: rebeccapurple;
+    grid-area: main;
+}
+
+.fashion {
+    background-color: pink;
+    grid-area: section1;
+}
+
+.estilos {
+    background-color: rosybrown;
+    grid-area: section2;
+}
+
+.footer {
+    background-color: azure;
+    grid-area: footer;
+}
