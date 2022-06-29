@@ -609,6 +609,9 @@ h1 {
     padding-top: 150px;
 }
 
+.footer {
+    font-size: 60%!important;
+}
 }
 
 /* Star footer */
