@@ -15,9 +15,7 @@ body {
     margin-top: 50px;
     width: 100%;
     float: right;
-    -webkit-font-smoothing: antialiased;
-    overflow-x:hidden;
-    }
+}
 
 /* Start Navbar*/
 .navar {
@@ -83,13 +81,14 @@ header.contenedor {
     border: white;
     border-radius: 20px;
     position: fixed;
-    z-index: 3;
+    z-index: 5;
+    margin-right: 62.5%;
     transform: rotateY(0deg) rotateX(0deg) scale(1);
     perspective: 379.546px;
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
-.img_header {
+.img-header {
     max-width: 632px;
     min-width: 300px;
     background-image: url(./img/fondo2.JPG);
@@ -100,7 +99,7 @@ header.contenedor {
     flex: 1;
 }
 
-.img_header img {
+.img-header img {
     transform: rotateY(0deg) rotateX(0deg) scale(1);
     perspective: 379.546px;
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
@@ -123,7 +122,7 @@ header.contenedor {
     left: 20%;
 }
     
-.header_text {
+.header-text {
     flex: 2;
     margin: 50px;    
     max-width: 390px;
@@ -172,7 +171,7 @@ h1 {
 /* Finish Header */
 
 /* Star Perfil */
-#overlay {
+#overlay-perfil {
     width: 95%;
     min-width: 300px;
     display: flex;
@@ -215,7 +214,7 @@ h1 {
      );
 }
 
-#tituloperfil {
+#titulo-perfil {
     text-align: center;
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -260,7 +259,7 @@ h1 {
      );
 }
 
-.titulohabilidades {
+.titulo-habilidades {
     text-align: center;
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -300,7 +299,7 @@ h1 {
 /* Finish Perfil */
 
 /* Star Wave */
-.wave_div {
+.wave-div {
     width: 100%;
     min-width: 300px;
     height: 320px;
@@ -314,7 +313,7 @@ h1 {
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
-#text_cot h1 {
+#text-cot h1 {
     font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
     text-align: center;
     word-wrap: break-word;
@@ -324,6 +323,7 @@ h1 {
 }
 
 .btn2 {
+    width: 26%;
     align-self: center;
     cursor: pointer;
     font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
@@ -350,7 +350,6 @@ h1 {
     animation-duration: .2s;
     z-index: 3;
     object-fit: cover;
-    margin-top: 140px;
     margin-left: 20%;
 }
 
@@ -359,14 +358,13 @@ h1 {
 }
 /* Finish Wave*/
 
-/* Star Services */
 
 /* Star Services */
 .servicios {
     margin: 100px 0px;
 }
 
-.contenedor_serv {
+.contenedor-serv {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3,33.3%);
@@ -385,6 +383,9 @@ h1 {
 }
 
 #transformacion, #UX, #web  {
+    transform: rotateY(0deg) rotateX(0deg) scale(1);
+    perspective: 379.546px;
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
     max-width: 200px;
     max-height: 205px;
     width: 100%;
@@ -413,7 +414,7 @@ h1 {
     margin-top: 80px;
 }
 
-.text_boh, .text_kuth {
+.text-boh, .text-kuth {
     padding-top: 40px;
     padding-bottom: 40px;
     margin-right: 5.5%;
@@ -424,7 +425,7 @@ h1 {
     mix-blend-mode: unset!important;
 }
 
-.text_boh h4, .text_kuth h4 {
+.text-boh h4, .text-kuth h4 {
     font-weight: 200!important;
     text-transform: uppercase;
     font-size: 13px;
@@ -433,7 +434,7 @@ h1 {
     line-height: 1.8em;
 }
 
-.text_boh h3, .text_kuth h3 {
+.text-boh h3, .text-kuth h3 {
     font-weight: 200;
     color: #ebdddd!important;
     letter-spacing: 1px;
@@ -443,7 +444,7 @@ h1 {
     -webkit-text-size-adjust: 100%;
 }
 
-.text_boh p, .text_kuth p {
+.text-boh p, .text-kuth p {
     font-weight: 300!important;
     word-wrap: break-word;
 }
@@ -468,14 +469,14 @@ h1 {
     padding-bottom: 2rem;
 }
 
-.web_boh {
+.web-boh {
     max-width: 80%;
     min-height: 292px;
     background-image: url(./img/monitor_bohemia.gif);
     background-size: 100% 100%;
 }
 
-.web_kuth {
+.web-kuth {
     max-width: 80%;
     min-height: 292px;
     background-image: url(./img/monitor_kuthzen.gif);
@@ -541,7 +542,7 @@ h1 {
         font-size: 1.9rem!important;
         }
 
-    .header_text {
+    .header-text {
         margin-bottom: 0;
         }
 
@@ -558,11 +559,11 @@ h1 {
         margin: 50px;;
     }
 
-    .wave_div {
+    .wave-div {
         margin-bottom: 150px!important;
     }
 
- 	.proyectos, .text_boh, .text_kuth {
+ 	.proyectos, .text-boh, .text-kuth {
 		margin-left:25px!important;
         align-items: stretch;
 		}
@@ -586,14 +587,14 @@ h1 {
         margin-left: 15%!important;
     }
 
-    .wave_div {
+    .wave-div {
         grid-template-columns: repeat(1,100%);
     }
 }
 
 @media (min-width:800px){
 
-.header_text a {
+.header-text a {
     margin-left: 5%;
 }
 
@@ -601,7 +602,7 @@ h1 {
 
 @media (max-width:490px){
 
-.contenedor_serv, .bohemia, .kuthzen, .wave_div {
+.contenedor-serv, .bohemia, .kuthzen, .wave-div {
     grid-template-columns: repeat(1,100%);
 }
 
@@ -646,7 +647,7 @@ h1 {
     word-wrap: break-word;
     margin-right: 50px;
     position: relative;
-    z-index: 6;
+    z-index: 2;
     font-size: 120%!important;
     align-self: center;
     cursor: pointer;
@@ -662,7 +663,7 @@ h1 {
     padding-top: 20px;
     margin-right: 50px;
     position: relative;
-    z-index: 6;
+    z-index: 2;
     font-size: 120%!important;
     align-self: center;
     cursor: pointer;
@@ -684,4 +685,177 @@ h1 {
     transform: scale(1.2);
 }
 
+.contenedor article .btn-abrir-popup {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.contenedor article .btn-abrir-popup:hover {
+	background: rgba(94,125,227, .9);
+}
+
 /* Finish footer */
+
+/* Star overlay cotización */
+
+.overlay {    
+    background-image: url(./img/estrellas.gif);
+    opacity: 1;
+	position: fixed;
+    z-index: 4;
+    height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    visibility: hidden; 
+    font-family: 'Inconsolata', monospace;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup {
+	background: #F8F8F8;
+    transform: rotateY(0deg) rotateX(0deg) scale(1.3);
+    perspective: 379.546px;
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
+ 	border-radius: 3px;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+	color: #000;
+} 
+
+.popup h1 {
+    text-shadow: 0 0 80px rgba(9, 5, 219, 0.959),0 0 32px rgba(11, 66, 207, 0.884);
+    border-radius: 10px;
+}
+
+.popup h3 {
+    color: #5f00cc!important;
+ 	font-size: 26px;
+}
+
+.popup h4 {
+    color: #000!important;
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 40px;
+	opacity: 0;
+} 
+
+ .popup form .contenedor-inputs {
+	opacity: 0.5;
+}
+
+.popup form .contenedor-inputs input {
+	width: 100%;
+	margin-bottom: 20px;
+	height: 52px;
+	font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+	line-height: 52px;
+	text-align: center;
+	border: 1px solid #BBBBBB;
+    border-radius: 50px;
+}
+
+.popup form .btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+    background: linear-gradient(45deg,#ff6d1b,#e0417f);
+    line-height: 1.5rem;
+    will-change: transform,filter;
+    float: none;
+    transition: all .15s ease-out;
+    border-radius: 100px;
+    font-weight: 600;
+    letter-spacing: 0;
+    transform: rotateY(0deg) rotateX(0deg) scale(1);
+    perspective: 379.78px;
+    filter: drop-shadow(rgba(230, 75, 117, 0.37) 0px 10px 15px);
+}
+
+.popup form .btn-submit:hover {
+    background: linear-gradient(45deg,#ff1bce,#e0417f);
+}  
+
+.wrap {
+    font-family: 'Inconsolata', monospace;
+    color: #000;
+	font-size: 16px;
+    padding-bottom: 20px;
+}
+
+/* ------------------------- */
+/* Animaciones */
+/* ------------------------- */
+.popup.active {	transform: scale(1); opacity: 1; }
+.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
+
+@keyframes entradaTitulo {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaSubtitulo {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes entradaInputs {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>L!zGC</title>
     <link rel="shortcut icon" href="./src/img/Imagen5.png">
@@ -16,17 +18,17 @@
         <a href="https://github.com/LIZGRICAS" target="_blank"><img src=src\img\github_preview_rev_1.png alt="base" id="github"></a>
         <a href="https://api.whatsapp.com/send?phone=573008333775" target="_blank"><img src=src\img\Whatsapp_preview_rev_1_preview_rev_1.png alt="base" id="whatsapp"></a>
         <a href="https://www.linkedin.com/in/lizbeth-grisales-castro" target="_blank"><img src=src\img\linkedin1.jpg alt="base" id="linkedin"></a>
-        <a href="" target="_blank"><img src=src\img\Telegram_preview_rev_2.png alt="base" id="telegram"></a>
+        <a href="https://t.me/LizGricas" target="_blank"><img src=src\img\Telegram_preview_rev_2.png alt="base" id="telegram"></a>
     </nav>
  <!--Finish Navbar-->
  <!--Star Header-->
  <header class="contenedor">        
         <img src="./src/img/logo.png" alt="logo" id="logo">
-    <div class="img_header">
+    <div class="img-header">
         <img src="./src/img/8clX.gif" alt="" id="gif">
         <img src="./src/img/Arcoíris CV.png" alt="" id="fotografia">
     </div>
-    <div class="header_text">
+    <div class="header-text">
         <h1>PROGRAMADORA<br> FREELANCER 
             <br><br>Lizbeth Grisales Castro<br><br>
         </h1>
@@ -38,9 +40,9 @@
 </header>
 <!--Finish Header-->
 <!--Star Perfil-->
-<main id="overlay">
+<main id="overlay-perfil">
     <strong class="Perfil">
-        <h2 id="tituloperfil">Sobre mi..</h2>
+        <h2 id="titulo-perfil">Sobre mi..</h2>
         <p>Soy una persona autodidacta por naturaleza, apasionada por los asuntos humanos y la tecnología, es por esto que desde mi experiencia academica y profesional busco siempre integrar en los procesos y servicios el uso de las tecnologias de manera creativa, bajo un sentido ético, social y humano, imaginando nuevos paradigmas para la resolución de problemas, proponiendo estrategias y gestionando de manera proactiva las actividades encomendadas.
         <br>
         <br>
@@ -48,7 +50,7 @@
         </p>
     </strong>
     <aside class="Habilidades">
-        <h2 class="titulohabilidades">Habilidades</h2>
+        <h2 class="titulo-habilidades">Habilidades</h2>
         <br>
         <br>
         <ul id="viñeta">
@@ -63,19 +65,44 @@
 </main>
 <!--Finish Perfil-->
 <!--Star wave-->
-<section class="wave_div">
-        <div id="text_cot"> <h1>Dale vida a tu sitio web <br> con un diseño personalizado.</h1>
+<section class="wave-div">
+        <div id="text-cot"> <h1>Dale vida a tu sitio web <br> con un diseño personalizado.</h1>
         </div>
-        <a href="https://api.whatsapp.com/send?phone=573008333775" target="_blank" style="text-decoration:none">
-            <button type="button" class="btn2 "  data-filter-color="#5f00cc">
+            <button type="button" class="btn2" class="btn-abrir-popup" id="btn-abrir-popup" data-filter-color="#5f00cc">
             Consigue una cotización
-            </button></a>
-    </div> 
+            </button>
 </section>
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h1>5%</h1>
+        <h3>DE DESCUENTO ADICIONAL</h3>
+        <h4>Déjame tu datos y estaré en instantes contigo</h4>
+        <form action="">
+            <div class="contenedor-inputs">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo">
+                <input type="email" placeholder="Celular">
+                <input type="email" placeholder="Mensaje (opcional)">
+            </div>
+            <div class="wrap">
+                <input type="radio" name="Services" id="Web-site">
+                <label for="Web-site">Sitio Web</label>
+                <input type="radio" name="Services" id="Transformacion-digital">
+                <label for="Transformacion-digital">Transformacion digital</label><br>
+                <input type="radio" name="Services" id="Exp-usuario">
+                <label for="Exp-usuario">Experiencia de Usuario</label>
+                <input type="radio" name="Services" id="legal">
+                <label for="legal">Analisis legal de la marca</label>
+            </div>
+            <input type="submit" class="btn-submit" value="Quiero que me contacten">
+        </form>
+    </div>
+</div>
 <!--Star servicies-->
 <section class="servicios"> 
     <h1> Mis servicios incluyen…</h1>
-    <div class="contenedor_serv">
+    <div class="contenedor-serv">
         <div class="web">
             <a href="" target="_blank"><img src="./src/img/web.gif" alt="web" id="web"></a>
             <br><br><br>
@@ -103,7 +130,7 @@
 <article class="proyectos">
     <h1>Proyectos recientes</h1>
     <div class="bohemia">
-        <div class="text_boh">
+        <div class="text-boh">
             <h4>diseño de sitios web y marca</h4>
             <h3>Bohemia Design.co</h3>
             <p><span>Bohemia Design.co es una marca de ropa que personaliza tus prendas a la medida, a la vanguardia de la moda y desde un sentido medio ambiental.</span></p>
@@ -111,11 +138,11 @@
             <img src="./src/img/icons8-información-del-sistema-64.png" alt="monitor" id="monitor"> 
             <p class="sitio">VER SITIO WEB</p>
         </div>
-        <div class="web_boh"></div>
+        <div class="web-boh"></div>
         <br>
     </div>
     <div class="kuthzen">
-        <div class="text_kuth">
+        <div class="text-kuth">
             <h4>diseño de sitios web y marca</h4>
             <h3>Kuthzen</h3>
             <p><span>Kuthzen es una Startup de consultoría estratégica para la transformación digital de modelos de negocios con diseños creativos, tecnológicos y sostenibles.</span></p>
@@ -123,7 +150,7 @@
             <img src="./src/img/icons8-información-del-sistema-64.png" alt="monitor" id="monitor"> 
             <p class="sitio">SITIO WEB PRÓXIMAMENTE...</p>
         </div>
-        <div class="web_kuth"></div>
+        <div class="web-kuth"></div>
     </div>
 </article>
 <br>
@@ -163,9 +190,9 @@
 </footer> 
 <!--Finish Footer-->
     <!-- Swiper JS -->
+    <script  src="./src/js/popup.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
+    <!-- Initialize Swiper -->     
     <script>
       var swiper = new Swiper(".mySwiper", {
         cssMode: true,
