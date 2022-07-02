@@ -8,13 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>L!zGC</title>
     <link rel="shortcut icon" href="./src/img/Imagen5.png">
 </head>
 <body>
  <!--Start Navbar-->
-    <nav class="navar">
+    <nav class="navar" data-aos="fade-down">
         <a href="https://github.com/LIZGRICAS" target="_blank"><img src=src\img\github_preview_rev_1.png alt="base" id="github"></a>
         <a href="https://api.whatsapp.com/send?phone=573008333775" target="_blank"><img src=src\img\Whatsapp_preview_rev_1_preview_rev_1.png alt="base" id="whatsapp"></a>
         <a href="https://www.linkedin.com/in/lizbeth-grisales-castro" target="_blank"><img src=src\img\linkedin1.jpg alt="base" id="linkedin"></a>
@@ -24,11 +25,11 @@
  <!--Star Header-->
  <header class="contenedor">        
         <img src="./src/img/logo.png" alt="logo" id="logo">
-    <div class="img-header">
+    <div class="img-header" data-aos="fade-down-right">
         <img src="./src/img/8clX.gif" alt="" id="gif">
         <img src="./src/img/Arcoíris CV.png" alt="" id="fotografia">
     </div>
-    <div class="header-text">
+    <div class="header-text" data-aos="fade-down-left">
         <h1>PROGRAMADORA<br> FREELANCER 
             <br><br>Lizbeth Grisales Castro<br><br>
         </h1>
@@ -41,8 +42,8 @@
 <!--Finish Header-->
 <!--Star Perfil-->
 <main id="overlay-perfil">
-    <strong class="Perfil">
-        <h2 id="titulo-perfil">Sobre mi..</h2>
+    <strong class="Perfil" data-aos="fade-left">
+        <h2 id="titulo-perfil" data-aos="fade-right">Sobre mi..</h2>
         <p>Soy una persona autodidacta por naturaleza, apasionada por los asuntos humanos y la tecnología, es por esto que desde mi experiencia academica y profesional busco siempre integrar en los procesos y servicios el uso de las tecnologias de manera creativa, bajo un sentido ético, social y humano, imaginando nuevos paradigmas para la resolución de problemas, proponiendo estrategias y gestionando de manera proactiva las actividades encomendadas.
         <br>
         <br>
@@ -50,10 +51,10 @@
         </p>
     </strong>
     <aside class="Habilidades">
-        <h2 class="titulo-habilidades">Habilidades</h2>
+        <h2 class="titulo-habilidades" data-aos="fade-left">Habilidades</h2>
         <br>
         <br>
-        <ul id="viñeta">
+        <ul id="viñeta" data-aos="fade-down">
             <li>Capacidad analítica</li>
             <li>Autogestión alta</li>
             <li>Creatividad e Innovación</li>
@@ -66,9 +67,9 @@
 <!--Finish Perfil-->
 <!--Star wave-->
 <section class="wave-div">
-        <div id="text-cot"> <h1>Dale vida a tu sitio web <br> con un diseño personalizado.</h1>
+        <div id="text-cot" data-aos="fade-right"> <h1>Dale vida a tu sitio web <br> con un diseño personalizado.</h1>
         </div>
-            <button type="button" class="btn2" class="btn-abrir-popup" id="btn-abrir-popup" data-filter-color="#5f00cc">
+            <button type="button" class="btn2" class="btn-abrir-popup" id="btn-abrir-popup" data-filter-color="#5f00cc" data-aos="fade-up-left">
             Consigue una cotización
             </button>
 </section>
@@ -82,17 +83,17 @@
             <div class="contenedor-inputs">
                 <input type="text" placeholder="Nombre">
                 <input type="email" placeholder="Correo">
-                <input type="email" placeholder="Celular">
-                <input type="email" placeholder="Mensaje (opcional)">
+                <input type="tel" placeholder="Celular">
+                <input type="text" placeholder="Mensaje (opcional)">
             </div>
             <div class="wrap">
                 <input type="radio" name="Services" id="Web-site">
-                <label for="Web-site">Sitio Web</label>
+                <label for="Web-site">Sitio Web </label>
                 <input type="radio" name="Services" id="Transformacion-digital">
-                <label for="Transformacion-digital">Transformacion digital</label><br>
+                <label for="Transformacion-digital">Transformacion digital </label><br>
                 <input type="radio" name="Services" id="Exp-usuario">
-                <label for="Exp-usuario">Experiencia de Usuario</label>
-                <input type="radio" name="Services" id="legal">
+                <label for="Exp-usuario">Experiencia de Usuario </label>
+                <input type="radio" name="Services" id="legal"> 
                 <label for="legal">Analisis legal de la marca</label>
             </div>
             <input type="submit" class="btn-submit" value="Quiero que me contacten">
@@ -101,8 +102,8 @@
 </div>
 <!--Star servicies-->
 <section class="servicios"> 
-    <h1> Mis servicios incluyen…</h1>
-    <div class="contenedor-serv">
+    <h1 data-aos="fade-up-left"> Mis servicios incluyen…</h1>
+    <div class="contenedor-serv" data-aos="fade-down">
         <div class="web">
             <a href="" target="_blank"><img src="./src/img/web.gif" alt="web" id="web"></a>
             <br><br><br>
@@ -128,9 +129,9 @@
  <center><hr width="50%" /></center>
 <!-- Start projects-->
 <article class="proyectos">
-    <h1>Proyectos recientes</h1>
+    <h1 data-aos="fade-up-right">Proyectos recientes</h1>
     <div class="bohemia">
-        <div class="text-boh">
+        <div class="text-boh" data-aos="fade-right">
             <h4>diseño de sitios web y marca</h4>
             <h3>Bohemia Design.co</h3>
             <p><span>Bohemia Design.co es una marca de ropa que personaliza tus prendas a la medida, a la vanguardia de la moda y desde un sentido medio ambiental.</span></p>
@@ -138,11 +139,11 @@
             <img src="./src/img/icons8-información-del-sistema-64.png" alt="monitor" id="monitor"> 
             <p class="sitio">VER SITIO WEB</p>
         </div>
-        <div class="web-boh"></div>
+        <div class="web-boh" data-aos="fade-left"></div>
         <br>
     </div>
     <div class="kuthzen">
-        <div class="text-kuth">
+        <div class="text-kuth" data-aos="fade-right">
             <h4>diseño de sitios web y marca</h4>
             <h3>Kuthzen</h3>
             <p><span>Kuthzen es una Startup de consultoría estratégica para la transformación digital de modelos de negocios con diseños creativos, tecnológicos y sostenibles.</span></p>
@@ -150,7 +151,7 @@
             <img src="./src/img/icons8-información-del-sistema-64.png" alt="monitor" id="monitor"> 
             <p class="sitio">SITIO WEB PRÓXIMAMENTE...</p>
         </div>
-        <div class="web-kuth"></div>
+        <div class="web-kuth" data-aos="fade-left"></div>
     </div>
 </article>
 <br>
@@ -158,9 +159,9 @@
 <center><hr width="50%" /></center>
 <!--Start Educación-->
 <section class="section3">
-<h1 class="Estudios">Formación</h1>
+<h1 class="Estudios" data-aos="fade-down">Formación</h1>
     <br>
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper" data-aos="fade-down-left">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="./src/img/Formación/En curso.gif" alt=""></div>
             <div class="swiper-slide"><img src="./src/img/Formación/Platzi.gif" alt=""></div>
@@ -176,7 +177,7 @@
 <!--Finish Educación-->
 <!--Star Footer-->
 <footer class="footer">
-    <span id="copy"> <b id="visit"> Visita M!...</b><a href="https://fractalescreative.server2.trinchera.dev/" target="_blank"><img src="./src/img/blog-removebg-preview.png" alt="blog" id="blog"></a>
+    <span id="copy"> <b id="visit"> Visita M!...</b><a href="https://fractalescreative.server2.trinchera.dev/" target="_blank"><img src="./src/img/blog-removebg-preview.png" alt="blog" id="blog" data-aos="fade-down-left"></a>
        <br><br>copyrigth© by Lizbeth Grisales Castro </span>
     <p id="datos">Teléfono +57 3008333775
        <br> lizgricas@gmail.com
@@ -189,10 +190,14 @@
     </p>
 </footer> 
 <!--Finish Footer-->
-    <!-- Swiper JS -->
+<!-- JS -->
     <script  src="./src/js/popup.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<!-- Initialize Swiper -->     
     <script>
       var swiper = new Swiper(".mySwiper", {
         cssMode: true,

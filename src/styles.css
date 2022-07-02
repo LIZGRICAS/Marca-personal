@@ -319,11 +319,13 @@ h1 {
     word-wrap: break-word;
     padding-top: 100px;
     margin-right: 50px;
-    position: relative;
+    margin-left: 50px;
+    position: relative;    
+    scroll-behavior: smooth;
 }
 
 .btn2 {
-    width: 280px;
+    width: 250px;
     align-self: center;
     cursor: pointer;
     font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
@@ -483,11 +485,9 @@ h1 {
     background-image: url(./img/monitor_kuthzen.gif);
     background-size: 100% 100%;
 }
-
 /* Finish projects */
 
 /* Star Formation*/
-
 .Estudios {
     margin: 0;
     text-align: 0;
@@ -535,85 +535,6 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-@media (max-width:766px){
-
-    h1 {
-        font-size: 1.9rem!important;
-        }
-
-    .header-text {
-        margin-bottom: 0;
-        }
-
-    .transformacion, .UX, .web { 
-        font-size: 70% !important;
-        }
-
-    #overlay {
-        margin-top: 0;
-        padding-top: 0;
-        }
-    
-    .servicios h1 {
-        margin: 50px;;
-    }
-
-    .wave-div {
-        margin-bottom: 150px!important;
-    }
-
- 	.proyectos, .text-boh, .text-kuth {
-		margin-left:25px!important;
-        align-items: stretch;
-		}
-
-    .bohemia {
-        margin-top: 80px;
-        }
-
-    .sitio {
-        margin-left: 25%;
-        font-size: 78%!important;
-        }       
-    
-    .swiper {
-        width: 70%; 
-        margin: 0px;
-        padding: 0;
-    }
-
-    .bt {
-        margin-left: 15%!important;
-    }
-
-    .wave-div {
-        grid-template-columns: repeat(1,100%);
-    }
-}
-
-@media (min-width:800px){
-
-.header-text a {
-    margin-left: 5%;
-}
-
-}
-
-@media (max-width:490px){
-
-.contenedor-serv, .bohemia, .kuthzen, .wave-div {
-    grid-template-columns: repeat(1,100%);
-}
-
-.servicios h1 {
-    padding-top: 150px;
-}
-
-.footer {
-    font-size: 60%!important;
-}
 }
 
 /* Star footer */
@@ -705,11 +626,9 @@ h1 {
 .contenedor article .btn-abrir-popup:hover {
 	background: rgba(94,125,227, .9);
 }
-
 /* Finish footer */
 
 /* Star overlay cotización */
-
 .overlay {    
     background-image: url(./img/estrellas.gif);
     opacity: 1;
@@ -824,9 +743,7 @@ h1 {
     padding-bottom: 20px;
 }
 
-/* ------------------------- */
-/* Animaciones */
-/* ------------------------- */
+/* Animaciones Overlay Cotizacion*/
 .popup.active {	transform: scale(1); opacity: 1; }
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
@@ -860,3 +777,109 @@ h1 {
 	from { opacity: 0; }
 	to { opacity: 1; }
 }
+
+/* Mediaquerys */
+@media (max-width:766px){
+
+    h1 {
+        font-size: 1.9rem!important;
+        }
+
+    .header-text {
+        margin-bottom: 0;
+        }
+
+    .transformacion, .UX, .web { 
+        font-size: 70% !important;
+        }
+
+    #overlay {
+        margin-top: 0;
+        padding-top: 0;
+        }
+    
+    .servicios h1 {
+        margin: 50px;;
+    }
+
+    .wave-div {
+        margin-bottom: 50px!important;
+    }
+
+ 	.proyectos, .text-boh, .text-kuth {
+		margin-left:25px!important;
+        align-items: stretch;
+		}
+
+    .bohemia {
+        margin-top: 80px;
+        }
+
+    .sitio {
+        margin-left: 25%;
+        font-size: 78%!important;
+        }       
+    
+    .swiper {
+        width: 70%; 
+        margin: 0px;
+        padding: 0;
+    }
+
+    .bt {
+        margin-left: 15%!important;
+    }
+
+    .wave-div {
+        grid-template-columns: repeat(1,100%);
+    }
+    .popup {
+        margin-right: 80px;
+    }
+}
+
+@media (min-width:800px){
+
+.header-text a {
+    margin-left: 5%;
+}
+
+.popup {
+    margin-right: 80px;
+}
+
+}
+
+@media (max-width:490px){
+
+.contenedor-serv, .bohemia, .kuthzen, .wave-div {
+    grid-template-columns: repeat(1,100%);
+}
+
+.servicios h1 {
+    padding-top: 0px;
+}
+
+.contenedor-serv {
+    padding-left: 10%;
+}
+
+.web-boh, .web-kuth {
+    margin-left: 10%;
+}
+
+.footer {
+    font-size: 60%!important;
+}
+
+.btn2 {
+    margin-top: 10px;
+}
+
+.popup {
+    width: 310px;
+    margin-right: 80px;
+}
+
+}
+
