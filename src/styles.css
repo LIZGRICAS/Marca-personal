@@ -476,6 +476,20 @@ h1 {
     padding-bottom: 2rem;
 }
 
+.web-cart {
+    max-width: 80%;
+    min-height: 292px;
+    background-image: url(./img/monitor_cartagena.gif);
+    background-size: 100% 100%;
+}
+
+.web-cielo {
+    max-width: 80%;
+    min-height: 292px;
+    background-image: url(./img/monitor_cafe.gif);
+    background-size: 100% 100%;
+}
+
 .web-boh {
     max-width: 80%;
     min-height: 292px;
@@ -506,6 +520,7 @@ h1 {
 .swiper {
     position: relative;
     margin:20px;
+    margin-left: 25%;
     padding: 5px;
     width: 50%; 
     min-width: 300px;
@@ -540,7 +555,6 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
-
 /* Star footer */
 .footer {
     width: 100%;
@@ -699,7 +713,7 @@ h1 {
 	opacity: 0;
 } 
 
- .popup form .contenedor-inputs {
+.popup form .contenedor-inputs {
 	opacity: 0.5;
 }
 
