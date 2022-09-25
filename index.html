@@ -14,23 +14,23 @@
     <link rel="shortcut icon" href="./src/img/Imagen5.png">
 </head>
 <body>
- <!--Start Navbar-->
-    <nav class="navar" data-aos="fade-down">
+ <!--Star Header-->
+ <header class="contenedor">
+     <!--Start Navbar-->
+     <nav class="navar" data-aos="fade-down">
         <a href="https://github.com/LIZGRICAS" target="_blank"><img src=src\img\github_preview_rev_1.png alt="base" id="github"></a>
         <a href="https://api.whatsapp.com/send?phone=573008333775" target="_blank"><img src=src\img\Whatsapp_preview_rev_1_preview_rev_1.png alt="base" id="whatsapp"></a>
         <a href="https://www.linkedin.com/in/lizbeth-grisales-castro" target="_blank"><img src=src\img\linkedin1.jpg alt="base" id="linkedin"></a>
         <a href="https://t.me/LizGricas" target="_blank"><img src=src\img\Telegram_preview_rev_2.png alt="base" id="telegram"></a>
     </nav>
- <!--Finish Navbar-->
- <!--Star Header-->
- <header class="contenedor">        
+ <!--Finish Navbar-->        
         <img src="./src/img/logo.png" alt="logo" id="logo">
     <div class="img-header" data-aos="fade-down-right">
         <img src="./src/img/8clX.gif" alt="" id="gif">
         <img src="./src/img/Arcoíris CV.png" alt="" id="fotografia">
     </div>
     <div class="header-text" data-aos="fade-down-left">
-        <h1>PROGRAMADORA<br> FREELANCER 
+        <h1 class="text-ppal">PROGRAMADORA<br> FREELANCER 
             <br><br>Lizbeth Grisales Castro<br><br>
         </h1>
         <a href="https://api.whatsapp.com/send?phone=573008333775" target="_blank" style="text-decoration:none">
@@ -68,9 +68,9 @@
 <!--Finish Perfil-->
 <!--Star wave-->
 <section class="wave-div">
-        <div id="text-cot" data-aos="fade-right"> <h1>Dale vida a tu sitio web <br> con un diseño personalizado.</h1>
+        <div id="text-cot" data-aos="fade-right"> <h1 class="text-cot">Dale vida a tu sitio web <br> con un diseño <span class="auto-type"></span></h1>
         </div>
-            <button type="button" class="btn2" class="btn-abrir-popup" id="btn-abrir-popup" data-filter-color="#5f00cc" data-aos="fade-up-left">
+            <button type="button" class="btn-abrir-popup btn2" id="btn-abrir-popup" data-filter-color="#5f00cc" data-aos="fade-up-left">
             Consigue una cotización
             </button>
 </section>
@@ -103,7 +103,7 @@
 </div>
 <!--Star servicies-->
 <section class="servicios"> 
-    <h1 data-aos="fade-up-left"> Mis servicios incluyen…</h1>
+    <h1 data-aos="fade-up-left" class="text-ppal"> Mis servicios incluyen…</h1>
     <div class="contenedor-serv" data-aos="fade-down">
         <div class="web">
             <a href="" target="_blank"><img src="./src/img/web.gif" alt="web" id="web"></a>
@@ -130,7 +130,7 @@
  <center><hr width="50%" /></center>
 <!-- Start projects-->
 <article class="proyectos">
-    <h1 data-aos="fade-up-right">Proyectos recientes</h1>
+    <h1 data-aos="fade-up-right" class="text-ppal">Proyectos recientes</h1>
     <div class="bohemia">
         <div class="text-boh" data-aos="fade-right">
             <h4>diseño de sitio web y UX copy</h4>
@@ -186,7 +186,7 @@
 <center><hr width="50%" /></center>
 <!--Start Educación-->
 <section class="section3">
-<h1 class="Estudios" data-aos="fade-down">Formación</h1>
+<h1 class="Estudios text-ppal" data-aos="fade-down">Formación</h1>
     <br>
     <div class="swiper mySwiper" data-aos="fade-down-left">
         <div class="swiper-wrapper">
@@ -218,11 +218,21 @@
 </footer> 
 <!--Finish Footer-->
 <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script  src="./src/js/popup.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+<!-- Initialize TYPED -->
+    <script>
+        let typed = new Typed(".auto-type", {
+            strings: ["Personalizado.", "Innovador.", "Estratégico."],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+         })
     </script>
 <!-- Initialize Swiper -->     
     <script>

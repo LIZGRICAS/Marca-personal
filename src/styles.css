@@ -14,7 +14,8 @@ body {
     margin: auto;
     margin-top: 50px;
     width: 100%;
-    float: right;
+    overflow-x: hidden;
+
 }
 
 /* Start Navbar*/
@@ -64,7 +65,7 @@ body {
 
 /* Star Header */
 header.contenedor {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
@@ -73,7 +74,8 @@ header.contenedor {
 }
 
 #logo {
-    margin:0;
+    margin:0;   
+    margin-right: 62.5%;
     width: auto;
     max-height: 100px;
     min-height: 50px;
@@ -82,9 +84,8 @@ header.contenedor {
     border-radius: 20px;
     position: fixed;
     z-index: 5;
-    margin-right: 62.5%;
     transform: rotateY(0deg) rotateX(0deg) scale(1);
-    perspective: 379.546px;
+    perspective: 179.546px;
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
@@ -129,7 +130,7 @@ header.contenedor {
     min-width: 300px;
 }
 
-h1 {
+.text-ppal {
     margin-top: 1.5rem;
     text-align: center;
     font-size: 2.25rem;
@@ -313,15 +314,24 @@ h1 {
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
-#text-cot h1 {
+.text-cot {
     font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
     text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700!important;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    text-shadow: 0 0 80px rgb(192 219 255/48%),0 0 32px rgb(65 120 255/54%);
     word-wrap: break-word;
-    padding-top: 100px;
-    margin-right: 50px;
-    margin-left: 50px;
-    position: relative;    
+    margin-top: 100px;
+    padding-top: 40px;
+    margin-left: 120px;
     scroll-behavior: smooth;
+}
+
+.auto-type {
+    color: #10002b; linear-gradient(45deg,#5f00cc,#a664f1);
 }
 
 .btn2 {
@@ -331,7 +341,7 @@ h1 {
     font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
     color: #fff;
     background: linear-gradient(45deg,#5f00cc,#a664f1);
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0.75rem 1.5rem;
     line-height: 1.5rem;
     will-change: transform,filter;
@@ -350,7 +360,6 @@ h1 {
     filter: drop-shadow(rgba(230, 75, 117, 0.37) 0px 10px 15px);
     animation-timing-function: linear;
     animation-duration: .2s;
-    z-index: 3;
     object-fit: cover;
     margin-top: 0px;
     margin-left: 20%;
