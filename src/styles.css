@@ -28,7 +28,6 @@ body {
     align-items:flex-start;
     position: fixed;
     left: 90%;
-    margin-right: 62.5%;
     transform: rotateY(0deg) rotateX(0deg) scale(1);
     perspective: 379.546px;
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
@@ -75,7 +74,6 @@ header.contenedor {
 
 #logo {
     margin:0;   
-    margin-right: 62.5%;
     width: auto;
     max-height: 100px;
     min-height: 50px;
@@ -109,8 +107,8 @@ header.contenedor {
 
 #gif {
     width: 100%;
-    height: 100%;
-    opacity: 0.25;
+    hopacity: 0.25;eight: 100%;
+    
 }
 
 #fotografia {
@@ -816,6 +814,18 @@ header.contenedor {
         margin-bottom: 0;
         }
 
+    .navar {
+    left: 85%;
+    margin-right: 70%;
+    }
+    #logo {   
+        margin-right: 82.5%;
+        left: 3%;
+        position:absolute;
+    }
+    .text-cot {
+    margin-left: 0;
+    }
     .transformacion, .UX, .web { 
         font-size: 70% !important;
         }
@@ -851,8 +861,8 @@ header.contenedor {
         width: 70%; 
         margin: 0px;
         padding: 0;
+        margin-left: 15%;
     }
-
     .bt {
         margin-left: 15%!important;
     }
@@ -866,7 +876,14 @@ header.contenedor {
 }
 
 @media (min-width:800px){
-
+    #logo {   
+        margin-right: 82.5%;
+        left: 3%;
+        position:absolute;
+}
+.text-cot {
+    margin-left: 0;
+}
 .header-text a {
     margin-left: 5%;
 }
@@ -878,11 +895,21 @@ header.contenedor {
 }
 
 @media (max-width:490px){
-
+#logo {   
+        margin-right: 82.5%;
+        left: 3%;
+        position:absolute;
+}
+.navar {
+        left: 73%;  
+}
+    
 .contenedor-serv, .bohemia, .kuthzen, .wave-div {
     grid-template-columns: repeat(1,100%);
 }
-
+.text-cot {
+    margin-left: 0;
+}
 .servicios h1 {
     padding-top: 0px;
 }
@@ -908,5 +935,10 @@ header.contenedor {
     margin-right: 80px;
 }
 
+.swiper {
+    margin-left: 10%;
 }
+
+}
+
 
