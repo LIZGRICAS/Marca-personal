@@ -510,6 +510,13 @@ header.contenedor {
     background-image: url(./img/monitor_kuthzen.gif);
     background-size: 100% 100%;
 }
+
+.web-dulce {
+    max-width: 80%;
+    min-height: 292px;
+    background-image: url(./img/monitor_dulce.gif);
+    background-size: 100% 100%;
+}
 /* Finish projects */
 
 /* Star Formation*/
