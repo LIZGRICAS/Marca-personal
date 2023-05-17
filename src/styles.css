@@ -18,6 +18,55 @@ body {
 
 }
 
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* Star Header */
+
+/*Sección Menu*/
+
+section.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: 88px;    
+}
+
+.menu__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    height: 24px;
+}
+
+
+ul.menu__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    margin-bottom: 0;
+    height: 19px;
+}
+
+.menu__list__item {
+    font-weight: 600;
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
+}
+
+
+
 /* Start Navbar*/
 .navar {
     z-index: 5;
@@ -61,8 +110,6 @@ body {
     height: 65px; 
 }
 /* Finish Navbar*/
-
-/* Star Header */
 header.contenedor {
     width: 100%;
     display: flex;
@@ -163,6 +210,7 @@ header.contenedor {
     perspective: 379.78px;
     filter: drop-shadow(rgba(230, 75, 117, 0.37) 0px 10px 15px);
     margin-left: 25%;
+    margin-top: 50px;
 }
 
 .btn:hover {
@@ -171,7 +219,7 @@ header.contenedor {
 /* Finish Header */
 
 /* Star Perfil */
-#overlay-perfil {
+.overlay-perfil {
     width: 95%;
     min-width: 300px;
     display: flex;
@@ -232,6 +280,15 @@ header.contenedor {
     font-size: 22px;
 }
 
+.about__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+}
+
 .Perfil p {
     width: auto;
     margin: 50px;
@@ -257,6 +314,9 @@ header.contenedor {
       rgba(214, 106, 214, 0.5), 
       transparent 400px
      );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .titulo-habilidades {
@@ -268,14 +328,16 @@ header.contenedor {
     color: rgba(255,255,255,var(--tw-text-opacity));
     text-shadow: 0 0 80px rgba(112, 248, 119, 0.48),0 0 32px rgba(93, 241, 80, 0.945);
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 10px;    
+    margin-bottom: 50px;
 }
 
 #viñeta {
     text-align: left;
     list-style-type: none; 
     padding: 0;
-    margin: 0;
+    margin: 0;    
+    margin-bottom: 20px;
 }
 
 #viñeta li {
@@ -296,7 +358,97 @@ header.contenedor {
     top: 20%;
     transform: translateY(-50%);
 }
+
+.about__lema {
+    margin: 20px;
+    padding: 0;
+}
 /* Finish Perfil */
+
+/* finish skills */
+
+/* Secciòn Skills y hobbies*/
+
+section.skills, section.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    margin: 100px;
+}
+
+.skills__title, .hobbies__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    text-shadow: 0 0 80px rgba(112, 248, 119, 0.48),0 0 32px rgba(93, 241, 80, 0.945);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.skills__line, .hobbies__line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.skills__box, .hobbies__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px 2px 2px 0px;
+    gap: 8px;
+    /* Preto/branco */
+    background: transparent;
+}
+
+.skills__box ul, .hobbies__box ul {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.skills__img, .hobbies__img {
+    width: 40px;
+    height: 37px;
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2A7AE4;    
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 1px 1px);
+}
+
+.skills__name, .hobbies__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+}
+
 
 /* Star Wave */
 .wave-div {
@@ -491,10 +643,10 @@ header.contenedor {
     background-size: 100% 100%;
 }
 
-.web-cielo {
+.web-analisis {
     max-width: 80%;
     min-height: 292px;
-    background-image: url(./img/monitor_cafe.gif);
+    background-image: url(./img/monitor_analisis.gif);
     background-size: 100% 100%;
 }
 
@@ -521,6 +673,78 @@ header.contenedor {
 /* Finish projects */
 
 /* Star Formation*/
+
+.academic__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    text-shadow: 0 0 80px rgba(112, 248, 119, 0.48),0 0 32px rgba(93, 241, 80, 0.945);
+    border-radius: 10px;
+    z-index: 2;
+
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    gap: 32px;
+    margin: 0;
+    text-align: center;
+}
+
+.academic__title {
+    text-align: center;
+    margin: 0px;
+    
+}
+
+.academic__courses__item__title h3 {
+    font-weight: 200;
+    color: #ebdddd!important;
+    letter-spacing: 1px;
+    line-height: 2em;
+    font-size: 1.5rem;
+    -webkit-text-size-adjust: 100%;
+}
+.academic__courses {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+}
+
+.academic__courses__box {
+    padding: 0px;
+    width: 100%;
+}
+
+.academic__courses__box ul{
+    padding-inline-start: 0px;
+}
+
+.academic__courses__item__img {
+    padding: 70px;
+}
+
+.academic__courses__list li img {
+    border-radius: 0px;
+    width: 70%;
+    height: 70px;
+    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 1px 1px);
+}
+
 .Estudios {
     margin: 0;
     text-align: 0;
