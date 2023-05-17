@@ -12,7 +12,7 @@ body {
     font-family: 'Circular Book', sans-serif;
     letter-spacing: .025em;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
     overflow-x: hidden;
 
@@ -76,7 +76,8 @@ ul.menu__list {
     flex-wrap:wrap;
     align-items:flex-start;
     position: fixed;
-    left: 90%;
+    left: 87%;
+    margin-top: 65px;
     transform: rotateY(0deg) rotateX(0deg) scale(1);
     perspective: 379.546px;
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
@@ -115,7 +116,6 @@ header.contenedor {
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    margin: 20px;
     padding: 25px;
 }
 
@@ -1036,7 +1036,7 @@ section.academic{
 }
 
 /* Mediaquerys */
-@media (max-width:766px){
+@media (max-width:768px){
 
     h1 {
         font-size: 1.9rem!important;
@@ -1104,6 +1104,9 @@ section.academic{
     }
     .popup {
         margin-right: 80px;
+    }
+    .btn2 {
+        margin-left: 35%;
     }
 }
 
@@ -1174,3 +1177,130 @@ section.academic{
 }
 
 
+/*Tablet*/
+
+@media (max-width: 768px) {
+    /*Skills*//*Hobbies*/
+
+    .skills__title, .hobbies__title{
+        font-size: 22px;
+        line-height: 26px;
+        margin: 0;
+    }
+    .skills__line, .hobbies__line {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3,33.3%);
+    }
+    
+    .skills__box, .hobbies__box {
+        padding-top: 10px;
+    }
+
+    .skills__img, .hobbies__img{
+        width: 32px;
+        height: 37px;
+    }
+
+    .skills__name, .hobbies__name{
+        font-size: 16px;
+        line-height: 19px;
+    }
+         
+    /*Formación Académica*/
+    section.academic {
+        padding: 30px 50px;
+    }
+
+    .academic__title{
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .academic__courses__item__img {
+        padding: 30px 70px;
+    }
+
+    .academic__courses__item__title h4{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .academic__courses__item__subtitle p{
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0;
+    }
+
+    .academic__courses {
+        margin-bottom: 50px;
+    }
+    }
+    
+
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+    /*Menu*/
+
+    section.menu {
+        text-align: center;
+        font-size: 12px;
+    }
+    /*Skills*//*Hobbies*/
+
+    .skills__title, .hobbies__title{
+        font-size: 22px;
+        line-height: 26px;
+        margin: 0;
+    }
+    .skills__line, .hobbies__line {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2,45%);
+    }
+    
+    .skills__box, .hobbies__box {
+        padding-top: 10px;
+    }
+
+    .skills__img, .hobbies__img{
+        width: 32px;
+        height: 37px;
+    }
+
+    .skills__name, .hobbies__name{
+        font-size: 16px;
+        line-height: 19px;
+    }
+         
+    /*Formación Académica*/
+    section.academic {
+        padding: 15px 30px;
+    }
+
+    .academic__title{
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .academic__courses{
+        display: grid;
+        justify-content: center;
+        grid-template-columns:100%;
+        margin-bottom: 50px;
+    }
+
+    .academic__courses__item__title h4{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .academic__courses__item__subtitle p{
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0;
+    }
+         
+}

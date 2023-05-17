@@ -1,3 +1,4 @@
+<!-- Responsive, organizar css y optimizar código, crear conexion de datos firebase -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,24 +19,29 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/styles.css" />
     <title>L!zGC</title>
     <link rel="shortcut icon" href="./src/img/Imagen5.png" />
   </head>
   <body>
+    <section class="menu">
+      <nav>
+        <ul class="menu__list">
+          <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+          <li class="menu__list__item">
+            <a href="#skills">Skills y Hobbies </a>
+          </li>
+          <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+          <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+        </ul>
+      </nav>
+    </section>
     <!--Start Header-->
     <header class="contenedor">
-      <section class="menu">
-        <nav>
-          <ul class="menu__list">
-            <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-            <li class="menu__list__item"><a href="#skills">Skills y Hobbies </a></li>
-            <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-            <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-          </ul>
-        </nav>
-      </section>
       <!--Start Navbar-->
       <nav class="navar" data-aos="fade-down">
         <a href="https://github.com/LIZGRICAS" target="_blank"
@@ -85,14 +91,14 @@
     <!--Finish Header-->
     <!--Start Perfil-->
     <main class="overlay-perfil" id="sobre-mi">
-      <strong class="Perfil" data-aos="fade-left" >
+      <strong class="Perfil" data-aos="fade-left">
         <h2 id="titulo-perfil" data-aos="fade-right">Sobre mi..</h2>
         <p class="about__paragraph">
           Soy una Colombiana autodidacta apasionada por los asuntos humanos y el
           mundo digital, dispuesta siempre a mejorar mis aptitudes y
-          conocimientos siendo una eterna aprendiz. Me considero una gran entusiasta, por
-          eso veo los retos como oportunidades de mejora, y como espacios para
-          cocrear un mejor lugar para todos.
+          conocimientos siendo una eterna aprendiz. Me considero una gran
+          entusiasta, por eso veo los retos como oportunidades de mejora, y como
+          espacios para cocrear un mejor lugar para todos.
         </p>
         <p class="about__paragraph">
           Es así como desde hace 10 años he combinado mis habilidades en
@@ -113,112 +119,189 @@
           <li>Trabajo en equipo</li>
           <li>Resolución de problemas</li>
           <li>Pensamiento crítico y propositivo</li>
-        </ul>        
+        </ul>
         <span class="about__lema">
-            <b id="lema">Lema:</b> Impactar realidades desde tecnologías
-            conscientes que recreen un mejor lugar para habitar.
-          </span>
+          <b id="lema">Lema:</b> Impactar realidades desde tecnologías
+          conscientes que recreen un mejor lugar para habitar.
+        </span>
       </aside>
     </main>
     <!--Finish Perfil-->
     <!-- Sección de Skills -->
-    <section class="skills" id="skills" >
-        <h3 class="skills__title">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <i class='bx bxl-html5 bx-lg' style='color:#c73b08;  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);' data-aos="fade-left"></i>
-                        <li class="skills__name"> HTML 5</li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <i class='bx bxl-css3 bx-lg' style='color:#0630a6; box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);' data-aos="fade-left" ></i>
-                        <li class="skills__name">CSS 3</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <i class='bx bxl-javascript bx-lg' style='color:#f6fb12; box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);' data-aos="fade-left" ></i>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <i class='bx bxl-nodejs bx-lg' style='color:#12fb29; box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);' data-aos="fade-left" ></i>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <i class='bx bxl-react bx-lg' style='color:#12fbf1; box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);' data-aos="fade-right" ></i>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <i class='bx bxl-python bx-lg' style='color:#2a7ae4; box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);' data-aos="fade-right"></i>
-                        <li class="skills__name">Python</li>
-                    </ul>
-                </div>
-                <div class="skills__box">
-                    <ul>
-                        <i class='bx bxl-wordpress bx-lg' style='color:#eae9f3; box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);' data-aos="fade-right" ></i>
-                        <li class="skills__name">WordPress</li>
-                    </ul>
-                </div>
+    <section class="skills" id="skills">
+      <h3 class="skills__title">Skills</h3>
+      <div class="skills__line">
+        <div class="skills__box">
+          <ul>
+            <i
+              class="bx bxl-html5 bx-lg"
+              style="
+                color: #c73b08;
+                box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+              "
+              data-aos="fade-left"
+            ></i>
+            <li class="skills__name">HTML 5</li>
+          </ul>
         </div>
+        <div class="skills__box">
+          <ul>
+            <i
+              class="bx bxl-css3 bx-lg"
+              style="
+                color: #0630a6;
+                box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+              "
+              data-aos="fade-left"
+            ></i>
+            <li class="skills__name">CSS 3</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <ul>
+            <i
+              class="bx bxl-javascript bx-lg"
+              style="
+                color: #f6fb12;
+                box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+              "
+              data-aos="fade-left"
+            ></i>
+            <li class="skills__name">Javascript</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <ul>
+            <i
+              class="bx bxl-nodejs bx-lg"
+              style="
+                color: #12fb29;
+                box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+              "
+              data-aos="fade-left"
+            ></i>
+            <li class="skills__name">Node JS</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <ul>
+            <i
+              class="bx bxl-react bx-lg"
+              style="
+                color: #12fbf1;
+                box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+              "
+              data-aos="fade-right"
+            ></i>
+            <li class="skills__name">React</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <ul>
+            <i
+              class="bx bxl-python bx-lg"
+              style="
+                color: #2a7ae4;
+                box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+              "
+              data-aos="fade-right"
+            ></i>
+            <li class="skills__name">Python</li>
+          </ul>
+        </div>
+        <div class="skills__box">
+          <ul>
+            <i
+              class="bx bxl-wordpress bx-lg"
+              style="
+                color: #eae9f3;
+                box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+              "
+              data-aos="fade-right"
+            ></i>
+            <li class="skills__name">WordPress</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!-- Sección de Hobbies -->
     <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><i class='bx bxs-landscape' data-aos="fade-left" ></i></li>
-                        <li class="hobbies__name">Mindfulness</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><i class='bx bx-book-open' style='color:#2a7ae4' data-aos="fade-left"></i></li>
-                        <li class="hobbies__name">Leer</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <i class='bx bxs-music' style='color:#2a7ae4' data-aos="fade-left" ></i></li>
-                        <li class="hobbies__name">Oir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="./src/img/tv_icon.png" alt="" data-aos="fade-right"></li>
-                        <li class="hobbies__name">Arte digital</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <i class='bx bxs-dog' style='color:#2a7ae4' data-aos="fade-right" ></i> </li>
-                        <li class="hobbies__name">Macotas</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="./src/img/camera_icon.png" alt="" data-aos="fade-right"> </li>
-                        <li class="hobbies__name">Viajar</li>
-                    </ul>
-                </div>
+      <h3 class="hobbies__title">Hobbies</h3>
+      <div class="hobbies__line">
+        <div class="hobbies__box">
+          <ul>
+            <li class="hobbies__img">
+              <i class="bx bxs-landscape" data-aos="fade-left"></i>
+            </li>
+            <li class="hobbies__name">Mindfulness</li>
+          </ul>
         </div>
+
+        <div class="hobbies__box">
+          <ul>
+            <li class="hobbies__img">
+              <i
+                class="bx bx-book-open"
+                style="color: #2a7ae4"
+                data-aos="fade-left"
+              ></i>
+            </li>
+            <li class="hobbies__name">Leer</li>
+          </ul>
+        </div>
+
+        <div class="hobbies__box">
+          <ul>
+            <li class="hobbies__img">
+              <i
+                class="bx bxs-music"
+                style="color: #2a7ae4"
+                data-aos="fade-left"
+              ></i>
+            </li>
+            <li class="hobbies__name">Oir música</li>
+          </ul>
+        </div>
+
+        <div class="hobbies__box">
+          <ul>
+            <li class="hobbies__img">
+              <img src="./src/img/tv_icon.png" alt="" data-aos="fade-right" />
+            </li>
+            <li class="hobbies__name">Arte digital</li>
+          </ul>
+        </div>
+
+        <div class="hobbies__box">
+          <ul>
+            <li class="hobbies__img">
+              <i
+                class="bx bxs-dog"
+                style="color: #2a7ae4"
+                data-aos="fade-right"
+              ></i>
+            </li>
+            <li class="hobbies__name">Macotas</li>
+          </ul>
+        </div>
+
+        <div class="hobbies__box">
+          <ul>
+            <li class="hobbies__img">
+              <img
+                src="./src/img/camera_icon.png"
+                alt=""
+                data-aos="fade-right"
+              />
+            </li>
+            <li class="hobbies__name">Viajar</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!--Start wave-->
     <section class="wave-div">
@@ -414,9 +497,9 @@
           <h3>Kuthzen</h3>
           <p>
             <span
-              >Kuthzen es una plataforma de consultoría estratégica para la
-              transformación digital de modelos de negocios con diseños
-              creativos, tecnológicos y sostenibles.</span
+              >Kuthzen es una marca que incentiva la industria creativa y tecnólogica, desde el comercio
+              electrónico, con nuevos contenidos de valor y creaciones
+              funcionales ofertadas desde diferentes medios digitales.</span
             >
           </p>
           <br />
@@ -436,10 +519,10 @@
           <p>
             <span
               >Creación de aplicativo Web SPA, con diseño branding, UX,
-              copywriting, mockup, MLS, instalación Backend a partir de requerimientos
-              funcionales y no funcionales definidos, creando modelos y
-              controladores del CRUD con conexión a base mongoDB y
-              un entorno FrontEnd desde la libreria React y Boostrap.</span
+              copywriting, mockup, MLS, instalación Backend a partir de
+              requerimientos funcionales y no funcionales definidos, creando
+              modelos y controladores del CRUD con conexión a base mongoDB y un
+              entorno FrontEnd desde la libreria React y Boostrap.</span
             >
           </p>
           <br />
@@ -461,54 +544,69 @@
         <div class="web-dulce" data-aos="fade-left"></div>
         <br />
       </div>
-      <!--     <div class="bohemia">
-        <div class="text-boh" data-aos="fade-right">
-            <h4>diseño de sitio web y marca</h4>
-            <h3>Mi Dulce Online </h3>
-            <p><span>Mi Dulce Online es un e-commerce de confiteria que comercializa una variedad de productos de las mejores marcas de dulces.</span></p>
-            <br>
-            <img src="./src/img/icons8-información-del-sistema-64.png" alt="monitor" id="monitor"> 
-            <a href="https://midulceonline.netlify.app/" target="_blank" style="text-decoration:none">
-                <p class="sitio">VER SITIO WEB</p></a>
-        </div>
-        <div class="web-dulce" data-aos="fade-left"></div>
-        <br>
-    </div> -->
     </article>
     <br />
     <!-- Finish projects -->
     <center><hr width="50%" /></center>
     <!--Start Educación-->
-    <section class="section3"id="formacion">
-      <section class="academic"  style="width: 100%; margin: 0;">
-        <h2 class="academic__title" >Formación académica</h2>
+    <section class="section3" id="formacion">
+      <section class="academic" style="width: 100%; margin: 0">
+        <h2 class="academic__title">Formación académica</h2>
         <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="./src/img/DS4A.png" style="margin: 0;" data-aos="fade-left"></li>
-                    <li class="academic__courses__item__title"><h3>Análisis de datos</h3></li>
-                    <li class="academic__courses__item__subtitle"><p>2022 - Correlation One/MinTic</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="./src/img/logo_oracleAlura-es.1657102612.svg" data-aos="fade-up-right"></li>
-                    <li class="academic__courses__item__title"><h3>Formación en Front-End</h3></li>
-                    <li class="academic__courses__item__subtitle"><p>En curso - Alura/Oracle</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="./src/img/Logo_officiel_de_l'Organisation_.png"data-aos="fade-right"></li>
-                    <li class="academic__courses__item__title"><h3>Desarrollo Fullstack</h3></li>
-                    <li class="academic__courses__item__subtitle"><p>2022 - OIT/Sapiencia</p></li>
-                </ul>
-            </div>
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <!-- Pon el logotipo de la institución de formación -->
+              <li class="academic__courses__item__img">
+                <img
+                  src="./src/img/DS4A.png"
+                  style="margin: 0"
+                  data-aos="fade-left"
+                />
+              </li>
+              <li class="academic__courses__item__title">
+                <h3>Análisis de datos</h3>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>2022 - Correlation One/MinTic</p>
+              </li>
+            </ul>
+          </div>
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <!--Pon el logotipo de la institución de formación -->
+              <li class="academic__courses__item__img">
+                <img
+                  src="./src/img/logo_oracleAlura-es.1657102612.svg"
+                  data-aos="fade-up-right"
+                />
+              </li>
+              <li class="academic__courses__item__title">
+                <h3>Formación en Front-End</h3>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>En curso - Alura/Oracle</p>
+              </li>
+            </ul>
+          </div>
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <!-- Pon el logotipo de la institución de formación -->
+              <li class="academic__courses__item__img">
+                <img
+                  src="./src/img/Logo_officiel_de_l'Organisation_.png"
+                  data-aos="fade-right"
+                />
+              </li>
+              <li class="academic__courses__item__title">
+                <h3>Desarrollo Fullstack</h3>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>2022 - OIT/Sapiencia</p>
+              </li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
       <div class="swiper mySwiper" data-aos="fade-down-left">
         <div class="swiper-wrapper">
@@ -563,7 +661,7 @@
       </p>
     </footer>
     <!--Finish Footer-->
-    <!-- JS -->    
+    <!-- JS -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./src/js/popup.js"></script>
