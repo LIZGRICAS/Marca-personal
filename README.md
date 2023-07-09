@@ -16,7 +16,7 @@
 }
 
 ## Encuentrame en la web 🌎: 
-- Algunos de mis proyectos <a href="[https://www.twitch.tv/blacktechdiva](https://portafoliolizbethgrisales.netlify.app/)">Website</a> 📹 ✍🏾
+- Algunos de mis proyectos <a href="https://www.twitch.tv/blacktechdiva](https://portafoliolizbethgrisales.netlify.app/">Website</a> 📹 ✍🏾
 - Interacción constante con comunidades digitales: #Code4Dev, #AlumniOne, #EnganchaTIC, #PLatzi. #OASYouthAcademy  🏓
 - Descubre mis actualizaciones <a href="https://www.linkedin.com/in/monicampowell/">LinkedIn</a> 💼
 
