@@ -2,7 +2,7 @@
 
 ### Conoce un poco más de mí en este espacio, en donde te mostraré algunas de mis destrezas y habilidades digitales.
 
-<img align='right' src='https://octodex.github.com/daftpunktocat-thomas.png' width='25%'>  
+<img align='right' src='https://octodex.github.com/images/daftpunktocat-thomas.gif' width='25%'>  
 
 {  
 
@@ -22,4 +22,4 @@
 
 ## Apasionada por seguir construyendo tecnologías que te harán avanzar a otro nivel!!
 
-<img align='right' src='https://octodex.github.com/mona-the-rivetertocat.png' width='50%'>  
+<img align='right' src='https://octodex.github.com/images/mona-the-rivetertocat.png' width='50%'>  
