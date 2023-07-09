@@ -1,8 +1,8 @@
 # Portafolio || Lizbeth Grisales Castro
 
-### Conoce un poco más de mí, en este espacio, en donde te mostraré algunas de mis destrezas y habilidades digitales.
+### Conoce un poco más de mí en este espacio, en donde te mostraré algunas de mis destrezas y habilidades digitales.
 
-<img align='right' src='[https://octodex.github.com/images/femalecodertocat.png](https://octodex.github.com/daftpunktocat-thomas/)' width='25%'>  
+<img align='right' src='https://octodex.github.com/daftpunktocat-thomas/' width='25%'>  
 
 {  
 
@@ -15,7 +15,11 @@
 
 }
 
+## Encuentrame en la web 🌎: 
+- Algunos de mis proyectos <a href="[https://www.twitch.tv/blacktechdiva](https://portafoliolizbethgrisales.netlify.app/)">Website</a> 📹 ✍🏾
+- Interacción constante con comunidades digitales: #Code4Dev, #AlumniOne, #EnganchaTIC, #PLatzi. #OASYouthAcademy  🏓
+- Descubre mis actualizaciones <a href="https://www.linkedin.com/in/monicampowell/">LinkedIn</a> 💼
 
 ## Apasionada por seguir construyendo tecnologías que te harán avanzar a otro nivel!!
 
-<img align='right' src='[https://octodex.github.com/images/femalecodertocat.png](https://octodex.github.com/daftpunktocat-thomas/)](https://octodex.github.com/mona-the-rivetertocat/)https://octodex.github.com/mona-the-rivetertocat/' width='50%'>  
+<img align='right' src='https://octodex.github.com/mona-the-rivetertocat/' width='50%'>  
