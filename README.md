@@ -22,4 +22,4 @@
 
 ## Apasionada por seguir construyendo tecnologías que te harán avanzar a otro nivel!!
 
-<img align='center' src='https://octodex.github.com/images/mona-the-rivetertocat.png' width='50%'>  
+<img align='center' src='https://octodex.github.com/images/mona-the-rivetertocat.png' >  
