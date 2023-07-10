@@ -20,6 +20,6 @@
 - Interacción constante con comunidades digitales: #Code4Dev, #AlumniOne, #EnganchaTIC, #PLatzi. #OASYouthAcademy  🏓
 - Descubre mis actualizaciones <a href="https://www.linkedin.com/in/lizbeth-grisales-castro/">LinkedIn</a> 💼
 
-## Apasionada por seguir construyendo tecnologías que nos hará avanzar a otro nivel!!
+## Apasionada por seguir construyendo tecnologías que nos harán avanzar a otro nivel!!
 
 <img align='center' src='https://octodex.github.com/images/mona-the-rivetertocat.png' width="300px" height="300px" >  
