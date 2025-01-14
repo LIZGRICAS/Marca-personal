@@ -21,6 +21,7 @@ body {
 ol, ul,li {
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: var(--cor-de-link);
@@ -111,10 +112,11 @@ ul.menu__list {
     height: 65px; 
 }
 /* Finish Navbar*/
-header.contenedor {
+header .contenedor {
     width: 100%;
+    height: 600px;
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 25px;
 }
@@ -134,10 +136,19 @@ header.contenedor {
     filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
 }
 
-.img-header {
-    max-width: 632px;
+.session-Two {
+    max-width:100%;
     min-width: 300px;
-    background-image: url(./img/fondo2.JPG);
+    margin: 8% 13%;
+    display: flex;
+    justify-content: space-between;
+ }
+
+.img-header {
+    max-width: 600px;
+    min-width: 300px;
+   min-height: 300px;
+    background-image: url(./img/LizCreative.gif);
     background-size: 100% 100%;
     transform: rotateY(0deg) rotateX(0deg) scale(1);
     perspective: 379.546px;
@@ -145,29 +156,6 @@ header.contenedor {
     flex: 1;
 }
 
-.img-header img {
-    transform: rotateY(0deg) rotateX(0deg) scale(1);
-    perspective: 379.546px;
-    filter: drop-shadow(rgba(162, 247, 232, 0.952) 0px 10px 15px);
-}
-
-
-#gif {
-    width: 100%;
-    height: 100%;
-    opacity: 0.25;
-    
-}
-
-#fotografia {
-    position: absolute;
-    width: 51%;
-    max-width: 310px;
-    height: 100%;  
-    z-index: 1;
-    grid-column: 1;
-    left: 20%;
-}
     
 .header-text {
     flex: 2;
@@ -219,6 +207,11 @@ header.contenedor {
 /* Finish Header */
 
 /* Star Perfil */
+
+.main {
+    padding-top: 5%;
+}
+
 .overlay-perfil {
     width: 95%;
     min-width: 300px;
@@ -227,7 +220,7 @@ header.contenedor {
     flex-wrap: wrap;
     padding: 25px;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top:10px;
     background: 
     radial-gradient(
       farthest-side at bottom left,
@@ -244,7 +237,7 @@ header.contenedor {
 .Perfil {
     max-width: 500px; 
     min-width: 300px;
-    margin-right: 20px;
+    margin: 10% 20px 0;
     border: white;
     border-radius: 20px;
     flex: 1;
@@ -369,13 +362,26 @@ header.contenedor {
 
 /* Secciòn Skills y hobbies*/
 
-section.skills, section.hobbies{
+.section-skill{
+    padding: 10% 3% 10% 10%;
+}
+
+section.skills{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
     gap: 32px;
-    margin: 100px;
+    margin: 100px 10px 100px 100px;
+}
+
+section.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    margin: 80px 0px 20px 20px;
 }
 
 .skills__title, .hobbies__title {
@@ -455,7 +461,7 @@ section.skills, section.hobbies{
     width: 100%;
     min-width: 300px;
     height: 320px;
-    margin-top: 100px;
+    margin-top: 20px;
     background:
     linear-gradient( to top, #32ded4ff, #9900efff, transparent 300px);
     opacity: 1.4;
@@ -523,8 +529,8 @@ section.skills, section.hobbies{
 
 
 /* Star Services */
-.servicios {
-    margin: 100px 0px;
+.section-servicios{
+    padding: 10% 5% 10% 10%;
 }
 
 .contenedor-serv {
@@ -561,7 +567,7 @@ section.skills, section.hobbies{
 
 /* Start projects */
 .proyectos {
-    padding: 54px 0;
+    padding: 50px 0;
 }
 
 .proyectos img {
@@ -616,6 +622,10 @@ section.skills, section.hobbies{
     color: rgba(187, 15, 164, 0.856); 
 }
 
+.text-kuth a:hover{ 
+    color: rgba(187, 15, 164, 0.856); 
+}
+
 #monitor {
     width: 40px;
     height: 40px;
@@ -650,6 +660,12 @@ section.skills, section.hobbies{
     background-size: 100% 100%;
 }
 
+.web-quimera {
+    max-width: 80%;
+    min-height: 292px;
+    background-image: url(./img/monitor_quimera.gif);
+    background-size: 100% 100%;
+}
 .web-boh {
     max-width: 80%;
     min-height: 292px;
@@ -1151,6 +1167,7 @@ section.academic{
 
 .contenedor-serv {
     padding-left: 10%;
+    padding-top:10%;
 }
 
 .web-boh, .web-kuth {
