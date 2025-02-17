@@ -179,34 +179,7 @@ header .contenedor {
     border-radius: 10px;
 }
 
-.btn {
-    cursor: pointer;
-    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
-    color: #fff;
-    background: linear-gradient(45deg,#ff6d1b,#e0417f);
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-    line-height: 1.5rem;
-    will-change: transform,filter;
-    float: none;
-    transition: all .15s ease-out;
-    height: auto;
-    border-radius: 100px;
-    transform: rotateX(0) rotateY(0) scale(1);
-    filter: drop-shadow(0 15px 15px rgba(0,0,0,.3));
-    font-weight: 600;
-    perspective-origin: 0 0;
-    letter-spacing: 0;
-    transform: rotateY(0deg) rotateX(0deg) scale(1);
-    perspective: 379.78px;
-    filter: drop-shadow(rgba(230, 75, 117, 0.37) 0px 10px 15px);
-    margin-left: 25%;
-    margin-top: 50px;
-}
 
-.btn:hover {
-    transform: scale(1.2);
-}
 /* Finish Header */
 
 /* Star Perfil */
