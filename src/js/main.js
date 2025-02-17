@@ -19,8 +19,8 @@ window.addEventListener("mousemove", e => {
     w = window.innerWidth;
     h = window.innerHeight;
   
-    const translateX =  e.changedTouches[0].pageX * (100 / w);
-    const translateXLayer =  e.changedTouches[0].pageX * (20 / w);
+    const translateX =  e.changedTouches[0].pageX * (20 / w);
+    const translateXLayer =  e.changedTouches[0].pageX * (5 / w);
   
     document.getElementById(
     "card").

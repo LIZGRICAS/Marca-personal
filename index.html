@@ -70,6 +70,19 @@
       </ul>
     </nav>
   </section>
+  
+  <i class='bx bx-menu burger bx-md' ></i>
+  <section class="menu-mobile">
+    <nav >
+      <ul class="menu__list_mobile">
+        <li class="menu__list__item_mobile"><a href="#sobre-mi">Sobre mi</a></li>
+        <li class="menu__list__item_mobile"><a href="#skills">Skills y Hobbies </a></li>
+        <li class="menu__list__item_mobile"><a href="#servicios">Servicios</a></li>
+        <li class="menu__list__item_mobile"><a href="#xp">Proyectos</a></li>
+        <li class="menu__list__item_mobile"><a href="#formacion">Formación</a></li>
+      </ul>
+    </nav>
+  </section>
   <!--Start Header-->
   <header class="contenedor">
     <!--Start Navbar-->
@@ -855,7 +868,7 @@
         </a>
       </span>
     </p>
-  </footer>
+  </footer> 
   <!--Finish Footer-->
   <!-- JS -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -889,6 +902,24 @@
       mousewheel: true,
       keyboard: true,
     });
+
+    // Obtener elementos
+const menu = document.querySelector('.menu-mobile');
+const menuIcon = document.querySelector('.burger');
+
+// Agregar un evento de clic al icono del menú
+menuIcon.addEventListener('click', () => {
+  // Verificar si el menú está visible (display: block)
+  const menuStyle = window.getComputedStyle(menu.querySelector('nav')).display;
+
+  if (menuStyle === 'none') {
+    // Si el menú está oculto (display: none), mostrarlo
+    menu.querySelector('nav').style.display = 'block';
+  } else {
+    // Si el menú está visible (display: block), ocultarlo
+    menu.querySelector('nav').style.display = 'none';
+  }
+});
   </script>
   <!-- partial -->
   <script src="./src/js/script.js"></script>
