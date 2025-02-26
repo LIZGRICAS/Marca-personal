@@ -28,6 +28,800 @@ a {
     text-decoration: none;
     color: var(--cor-de-link)
 }
+:root {
+    --color: #b39048;
+    --border: #C0C0C0;
+    --texture: #0c0c0c;
+    --title: "Proxima Nova Black";
+    --font2: 'Qaligo-Regular';
+    --font3: 'Qaligo-SS01';
+    --lightshadow: 0px 4px 10px 3px rgb(0 0 0 / 20%);
+    --darkAccentRGBA: 18, 18, 18;
+    --aguasdesentina: #3B7859;
+    --bandopolis: #CC9793;
+    --demacia: #8FA1B3;
+    --freljord: #5291B3;
+    --ionia: #CC6A8D;
+    --ixtal: #BF6A3F;
+    --ilhadassombras: #3B6573;
+    --montetargon: #AA90B0;
+    --noxus: #8B0000;
+    --piltover: #c2b574;
+    --shurima: #C28536;
+    --vazio: #853A6A;
+    --zaun: #A69F5E;
+    --border: 3px solid #b39048;
+    --homepage-background: rgb(10, 20, 40);
+    --introducao-background: url(./ilustracion-3d-pasillo-tunel-ciencia-ficcion-futurista-luces-neon-concepto-futurista-ciencia-ficcion_124437-1387_LE_upscale_balanced_x4.jpg);
+    --titleheader: arcane nine;
+    --wrap: #f0f0f0;
+    --border: #bcbcbc
+}
+
+a {
+    text-decoration: none
+}
+
+.btn {
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: .75rem 1.5rem;
+    line-height: 1.5rem;
+    will-change: transform, filter;
+    float: none;
+    transition: all .15s ease-out;
+    height: auto;
+    border-radius: 100px;
+    transform: rotateX(0) rotateY(0) scale(1);
+    filter: drop-shadow(0 15px 15px rgba(0, 0, 0, .3));
+    font-weight: 600;
+    perspective-origin: 0 0;
+    letter-spacing: 0;
+    transform: rotateY(0) rotateX(0) scale(1);
+    perspective: 379.78px;
+    filter: drop-shadow(rgba(230, 75, 117, .37) 0px 10px 15px);
+    margin-top: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.btn:hover {
+    transform: scale(1.2)
+}
+
+#left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden
+}
+
+.border {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 40px);
+    border: 0 solid #111;
+    z-index: 999;
+    pointer-events: none
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 2px;
+    background-color: #2143da;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color3);
+    border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover)
+}
+
+section.header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color2);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/ilustracion-3d-pasillo-tunel-ciencia-ficcion-futurista-luces-neon-concepto-futurista-ciencia-ficcion_124437-1387_LE_upscale_balanced_x4.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    filter: saturate(180%);
+    color: #fff;
+    overflow-y: hidden
+}
+
+.header logo {
+    margin-top: 10%;
+    width: 400px;
+    height: 88%;
+    background-image: url(./img/Diseño\ sin\ título\ \(1\)_LE_upscale_digital_art_remove_background_general_clip_to_object_off\(1\)\(1\).png);
+    background-position: center top;
+    position: absolute;
+    z-index: 4;
+    background-size: cover;
+    filter: grayscale(.5) contrast(100%) brightness(80%)
+}
+
+container {
+    position: absolute;
+    z-index: 2;
+    font-family: var(--titleheader);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%
+}
+
+jackson,
+percy {
+    display: block;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: 30px;
+    font-weight: 400
+}
+
+@media (max-width:768px) {
+
+    jackson,
+    percy {
+        font-size: 100px;
+        line-height: 100%;
+        letter-spacing: 30px
+    }
+}
+
+@media (max-width:425px) {
+
+    jackson,
+    percy {
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 10px
+    }
+}
+
+sub {
+    display: block;
+    font-size: 20px;
+    font-family: inter, sans-serif;
+    margin-top: 0;
+    letter-spacing: 5px;
+    font-weight: 400
+}
+
+container2 {
+    position: absolute;
+    z-index: 5;
+    font-family: var(--titleheader);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    color: transparent
+}
+
+container2 jackson,
+container2 percy {
+    -webkit-text-stroke: 2px white
+}
+
+container2 sub {
+    color: #fff
+}
+
+container,
+container2 {
+    margin-top: 150px
+}
+
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    border: 0;
+    margin: 0
+}
+
+@font-face {
+    font-family: "Arcane Nine";
+    src: url("https://db.onlinewebfonts.com/t/55f94f4aaef6ae1cd8fc974e98983d35.eot");
+    src: url("https://db.onlinewebfonts.com/t/55f94f4aaef6ae1cd8fc974e98983d35.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/55f94f4aaef6ae1cd8fc974e98983d35.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/55f94f4aaef6ae1cd8fc974e98983d35.woff") format("woff"), url("https://db.onlinewebfonts.com/t/55f94f4aaef6ae1cd8fc974e98983d35.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/55f94f4aaef6ae1cd8fc974e98983d35.svg#Arcane Nine") format("svg")
+}
+
+.h,
+.h-left,
+.h-left-bottom,
+.h-right-bottom {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.h .c,
+.h-left .c,
+.h-left-bottom .c,
+.h-right-bottom .c {
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 400px;
+    position: absolute;
+    margin: 0
+}
+
+.h .c:first-of-type {
+    right: 10px;
+    bottom: 10px
+}
+
+.h .c:nth-of-type(2) {
+    right: 20px;
+    bottom: 20px
+}
+
+.h .c:nth-of-type(3) {
+    right: 30px;
+    bottom: 30px
+}
+
+.h .c:nth-of-type(4) {
+    right: 40px;
+    bottom: 40px
+}
+
+.h .c:nth-of-type(5) {
+    right: 50px;
+    bottom: 50px
+}
+
+.h .c:nth-of-type(6) {
+    right: 60px;
+    bottom: 60px
+}
+
+.h .c:nth-of-type(7) {
+    right: 70px;
+    bottom: 70px
+}
+
+.h .c:nth-of-type(8) {
+    right: 80px;
+    bottom: 80px
+}
+
+.h .c:nth-of-type(9) {
+    right: 90px;
+    bottom: 90px
+}
+
+.h .c:nth-of-type(10) {
+    right: 100px;
+    bottom: 100px
+}
+
+.h .c:nth-of-type(11) {
+    right: 110px;
+    bottom: 110px
+}
+
+.h .c:nth-of-type(12) {
+    right: 120px;
+    bottom: 120px
+}
+
+.h .c:nth-of-type(13) {
+    right: 130px;
+    bottom: 130px
+}
+
+.h .c:nth-of-type(14) {
+    right: 140px;
+    bottom: 140px
+}
+
+.h .c:nth-of-type(15) {
+    right: 150px;
+    bottom: 150px
+}
+
+.h .c:nth-of-type(16) {
+    right: 160px;
+    bottom: 160px
+}
+
+.h .c:nth-of-type(17) {
+    right: 170px;
+    bottom: 170px
+}
+
+.h .c:nth-of-type(18) {
+    right: 180px;
+    bottom: 180px
+}
+
+.h .c:nth-of-type(19) {
+    right: 190px;
+    bottom: 190px
+}
+
+.h .c:nth-of-type(20) {
+    right: 200px;
+    bottom: 200px
+}
+
+.h .c:nth-of-type(21) {
+    right: 210px;
+    bottom: 210px
+}
+
+.h .c:nth-of-type(22) {
+    right: 220px;
+    bottom: 220px
+}
+
+.h .c:nth-of-type(23) {
+    right: 230px;
+    bottom: 230px
+}
+
+.h .c:nth-of-type(24) {
+    right: 240px;
+    bottom: 240px
+}
+
+.h .c:nth-of-type(25) {
+    right: 250px;
+    bottom: 250px
+}
+
+.h .c:nth-of-type(26) {
+    right: 260px;
+    bottom: 260px
+}
+
+.h .c:nth-of-type(27) {
+    right: 270px;
+    bottom: 270px
+}
+
+.h .c:nth-of-type(28) {
+    right: 280px;
+    bottom: 280px
+}
+
+.h .c:nth-of-type(29) {
+    right: 290px;
+    bottom: 290px
+}
+
+.h .c:nth-of-type(30) {
+    right: 300px;
+    bottom: 300px
+}
+
+.h .c:nth-of-type(31) {
+    right: 310px;
+    bottom: 310px
+}
+
+.h .c:nth-of-type(32) {
+    right: 320px;
+    bottom: 320px
+}
+
+.h .c:nth-of-type(33) {
+    right: 330px;
+    bottom: 330px
+}
+
+.h .c:nth-of-type(34) {
+    right: 340px;
+    bottom: 340px
+}
+
+.h .c:nth-of-type(35) {
+    right: 350px;
+    bottom: 350px
+}
+
+.h .c:nth-of-type(36) {
+    right: 360px;
+    bottom: 360px
+}
+
+.h .c:nth-of-type(37) {
+    right: 370px;
+    bottom: 370px
+}
+
+.h .c:nth-of-type(38) {
+    right: 380px;
+    bottom: 380px
+}
+
+.h .c:nth-of-type(39) {
+    right: 390px;
+    bottom: 390px
+}
+
+.h .c:nth-of-type(40) {
+    right: 400px;
+    bottom: 400px
+}
+
+.h .c:nth-of-type(41) {
+    right: 410px;
+    bottom: 410px
+}
+
+.h .c:nth-of-type(42) {
+    right: 420px;
+    bottom: 420px
+}
+
+.h .c:nth-of-type(43) {
+    right: 430px;
+    bottom: 430px
+}
+
+.h .c:nth-of-type(44) {
+    right: 440px;
+    bottom: 440px
+}
+
+.h .c:nth-of-type(45) {
+    right: 450px;
+    bottom: 450px
+}
+
+.h .c:nth-of-type(46) {
+    right: 460px;
+    bottom: 460px
+}
+
+.h .c:nth-of-type(47) {
+    right: 470px;
+    bottom: 470px
+}
+
+.h .c:nth-of-type(48) {
+    right: 480px;
+    bottom: 480px
+}
+
+.h .c:nth-of-type(49) {
+    right: 490px;
+    bottom: 490px
+}
+
+.h .c:nth-of-type(50) {
+    right: 500px;
+    bottom: 500px
+}
+
+.h .c:nth-of-type(51) {
+    right: 510px;
+    bottom: 510px
+}
+
+.h .c:nth-of-type(52) {
+    right: 520px;
+    bottom: 520px
+}
+
+.h .c:nth-of-type(53) {
+    right: 530px;
+    bottom: 530px
+}
+
+.h .c:nth-of-type(54) {
+    right: 540px;
+    bottom: 540px
+}
+
+.h .c:nth-of-type(55) {
+    right: 550px;
+    bottom: 550px
+}
+
+.h .c:nth-of-type(56) {
+    right: 560px;
+    bottom: 560px
+}
+
+.h .c:nth-of-type(57) {
+    right: 570px;
+    bottom: 570px
+}
+
+.h .c:nth-of-type(58) {
+    right: 580px;
+    bottom: 580px
+}
+
+.h .c:nth-of-type(59) {
+    right: 590px;
+    bottom: 590px
+}
+
+.h .c:nth-of-type(60) {
+    right: 600px;
+    bottom: 600px
+}
+
+.h .c:first-of-type {
+    right: 10px
+}
+
+.h .c:nth-of-type(2) {
+    right: 20px
+}
+
+.h .c:nth-of-type(3) {
+    right: 30px
+}
+
+.h .c:nth-of-type(4) {
+    right: 40px
+}
+
+.h .c:nth-of-type(5) {
+    right: 50px
+}
+
+.h .c:nth-of-type(6) {
+    right: 60px
+}
+
+.h .c:nth-of-type(7) {
+    right: 70px
+}
+
+.h .c:nth-of-type(8) {
+    right: 80px
+}
+
+.h .c:nth-of-type(9) {
+    right: 90px
+}
+
+.h .c:nth-of-type(10) {
+    right: 100px
+}
+
+.h .c:nth-of-type(11) {
+    right: 110px
+}
+
+.h .c:nth-of-type(12) {
+    right: 120px
+}
+
+.h .c:nth-of-type(13) {
+    right: 130px
+}
+
+.h .c:nth-of-type(14) {
+    right: 140px
+}
+
+.h .c:nth-of-type(15) {
+    right: 150px
+}
+
+.h .c:nth-of-type(16) {
+    right: 160px
+}
+
+.h .c:nth-of-type(17) {
+    right: 170px
+}
+
+.h .c:nth-of-type(18) {
+    right: 180px
+}
+
+.h .c:nth-of-type(19) {
+    right: 190px
+}
+
+.h .c:nth-of-type(20) {
+    right: 200px
+}
+
+.h .c:nth-of-type(21) {
+    right: 210px
+}
+
+.h .c:nth-of-type(22) {
+    right: 220px
+}
+
+.h .c:nth-of-type(23) {
+    right: 230px
+}
+
+.h .c:nth-of-type(24) {
+    right: 240px
+}
+
+.h .c:nth-of-type(25) {
+    right: 250px
+}
+
+.h .c:nth-of-type(26) {
+    right: 260px
+}
+
+.h .c:nth-of-type(27) {
+    right: 270px
+}
+
+.h .c:nth-of-type(28) {
+    right: 280px
+}
+
+.h .c:nth-of-type(29) {
+    right: 290px
+}
+
+.h .c:nth-of-type(30) {
+    right: 300px
+}
+
+.h .c:nth-of-type(31) {
+    right: 310px
+}
+
+.h .c:nth-of-type(32) {
+    right: 320px
+}
+
+.h .c:nth-of-type(33) {
+    right: 330px
+}
+
+.h .c:nth-of-type(34) {
+    right: 340px
+}
+
+.h .c:nth-of-type(35) {
+    right: 350px
+}
+
+.h .c:nth-of-type(36) {
+    right: 360px
+}
+
+.h .c:nth-of-type(37) {
+    right: 370px
+}
+
+.h .c:nth-of-type(38) {
+    right: 380px
+}
+
+.h .c:nth-of-type(39) {
+    right: 390px
+}
+
+.h .c:nth-of-type(40) {
+    right: 400px
+}
+
+.h .c:nth-of-type(41) {
+    right: 410px
+}
+
+.h .c:nth-of-type(42) {
+    right: 420px
+}
+
+.h .c:nth-of-type(43) {
+    right: 430px
+}
+
+.h .c:nth-of-type(44) {
+    right: 440px
+}
+
+.h .c:nth-of-type(45) {
+    right: 450px
+}
+
+.h .c:nth-of-type(46) {
+    right: 460px
+}
+
+.h .c:nth-of-type(47) {
+    right: 470px
+}
+
+.h .c:nth-of-type(48) {
+    right: 480px
+}
+
+.h .c:nth-of-type(49) {
+    right: 490px
+}
+
+.h .c:nth-of-type(50) {
+    right: 500px
+}
+
+.h .c:nth-of-type(51) {
+    right: 510px
+}
+
+.h .c:nth-of-type(52) {
+    right: 520px
+}
+
+.h .c:nth-of-type(53) {
+    right: 530px
+}
+
+.h .c:nth-of-type(54) {
+    right: 540px
+}
+
+.h .c:nth-of-type(55) {
+    right: 550px
+}
+
+.h .c:nth-of-type(56) {
+    right: 560px
+}
+
+.h .c:nth-of-type(57) {
+    right: 570px
+}
+
+.h .c:nth-of-type(58) {
+    right: 580px
+}
+
+.h .c:nth-of-type(59) {
+    right: 590px
+}
+
+.h .c:nth-of-type(60) {
+    right: 600px
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
 
 section.menu {
     display: flex;
