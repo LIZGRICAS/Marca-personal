@@ -1133,7 +1133,8 @@ section.academic {
     }
 
     .footer {
-        font-size: 60% !important
+        font-size: 60% !important;
+        text-align: center;
     }
 
     .btn2 {
