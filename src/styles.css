@@ -766,6 +766,13 @@ section.hobbies {
     padding-bottom: 2rem
 }
 
+.web-workana {
+    max-width: 80%;
+    min-height: 292px;
+    background-image: url(./img/monitor_workana.gif);
+    background-size: 100% 100%
+}
+
 .web-cart {
     max-width: 80%;
     min-height: 292px;
