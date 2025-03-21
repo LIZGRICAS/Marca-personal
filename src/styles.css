@@ -131,14 +131,16 @@ section.header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color2);
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/ilustracion-3d-pasillo-tunel-ciencia-ficcion-futurista-luces-neon-concepto-futurista-ciencia-ficcion_124437-1387_LE_upscale_balanced_x4.jpg);
-    background-position: center bottom;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/ilustracion-3d-pasillo-tunel-ciencia-ficcion-futurista-luces-neon-concepto-futurista-ciencia-ficcion_124437-1387_LE_upscale_balanced_x4.jpg);
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     filter: saturate(180%);
     color: #fff;
-    overflow-y: hidden
+    overflow-y: hidden;    
+    background-blend-mode: multiply;
 }
+
 
 .header logo {
     margin-top: 15%;
@@ -149,7 +151,11 @@ section.header {
     position: absolute;
     z-index: 4;
     background-size: cover;
-    filter: grayscale(.5) contrast(100%) brightness(80%)
+    filter: grayscale(.5) contrast(100%) brightness(80%);
+    mask-image: linear-gradient(
+        black 80%,
+        transparent
+    );
 }
 
 container {
